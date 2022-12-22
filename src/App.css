@@ -28,6 +28,5 @@
 
 .content {
   grid-area: content;
-  padding: 15px;
   background-color: cadetblue;
 }
