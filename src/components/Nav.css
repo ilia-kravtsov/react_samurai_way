@@ -1,0 +1,5 @@
+.nav {
+    grid-area: nav;
+    padding: 15px;
+    background-color: #738aff
+}
