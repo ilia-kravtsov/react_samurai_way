@@ -1,14 +1,22 @@
 import React from 'react';
 import PostsStyle from './Post.module.css'
 
-const Post = () => {
+type PostType = {
+    message: string,
+    likeCount: number,
+    disLikeCount: number
+}
+
+const Post = (props: PostType) => {
     return (
         <div className={PostsStyle.post}>
             <img src="https://avatars.mds.yandex.net/i?id=a69847b56ccbe331769d0552889e756a-5234578-images-thumbs&n=13"
                  alt="Groot"/>
-            <span className={PostsStyle.span}>Post_1</span>
+            <span className={PostsStyle.span}>{props.message}</span>
             <div>
+                <span>{props.likeCount}</span>
                 <button className={PostsStyle.radius}>Like</button>
+                <span>{props.disLikeCount}</span>
                 <button className={PostsStyle.radius} >Dislike</button>
             </div>
         </div>
