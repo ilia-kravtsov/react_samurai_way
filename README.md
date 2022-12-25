@@ -101,3 +101,7 @@ mainCssModuleObject = {`${CssModuleObject.item} ${CssModuleObject.active}`}
 
 чтобы узнать приходят ли свойства в объект просто выводим его в console.log()
 
+Группируем css и tsx файлы компонент в отдельные папки
+
+Дробим еще больше
+
