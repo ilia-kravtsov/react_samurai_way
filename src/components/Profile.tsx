@@ -1,24 +1,27 @@
 import React from 'react';
-import './Profile.css'
+import ProfileStyle from './Profile.module.css'
 
 const Profile = () => {
     return (
-        <div className='content'>
-            <img src="https://avatars.mds.yandex.net/i?id=a69847b56ccbe331769d0552889e756a-5234578-images-thumbs&n=13" alt="Groot"/>
-            <div>
-                ava + description
-            </div>
-            <div>
-                My Posts
+        <div className={ProfileStyle.content}>
+            <img src="https://avatars.mds.yandex.net/i?id=a69847b56ccbe331769d0552889e756a-5234578-images-thumbs&n=13"
+                 alt="Groot"/>
+            <div className={ProfileStyle.padding}>
                 <div>
-                    New Post
+                    ava + description
                 </div>
                 <div>
+                    My Posts
                     <div>
-                        Post_1
+                        New Post
                     </div>
-                    <div>
-                        Post_2
+                    <div className={ProfileStyle.posts}>
+                        <div className={ProfileStyle.post}>
+                            Post_1
+                        </div>
+                        <div className={ProfileStyle.post}>
+                            Post_2
+                        </div>
                     </div>
                 </div>
             </div>

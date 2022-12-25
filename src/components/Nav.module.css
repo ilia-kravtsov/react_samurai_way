@@ -3,3 +3,11 @@
     padding: 15px;
     background-color: #738aff
 }
+
+.item {
+    color: white;
+}
+
+.active {
+    color: gold;
+}

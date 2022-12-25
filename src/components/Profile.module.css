@@ -2,3 +2,11 @@
     grid-area: content;
     background-color: cadetblue;
 }
+
+.post {
+    color: chocolate;
+}
+
+.padding {
+    padding: 10px;
+}
