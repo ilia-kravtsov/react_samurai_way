@@ -3,8 +3,8 @@ import PostsStyle from './Post.module.css'
 
 type PostType = {
     message: string,
-    likeCount: number,
-    disLikeCount: number
+    likesCount: number,
+    disLikesCount: number
 }
 
 const Post = (props: PostType) => {
@@ -14,9 +14,9 @@ const Post = (props: PostType) => {
                  alt="Groot"/>
             <span className={PostsStyle.span}>{props.message}</span>
             <div>
-                <span>{props.likeCount}</span>
+                <span>{props.likesCount}</span>
                 <button className={PostsStyle.radius}>Like</button>
-                <span>{props.disLikeCount}</span>
+                <span>{props.disLikesCount}</span>
                 <button className={PostsStyle.radius} >Dislike</button>
             </div>
         </div>
